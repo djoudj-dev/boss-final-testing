@@ -576,37 +576,16 @@ open coverage/index.html
 
 ---
 
-## 🤝 Contribution
-
-Ce projet est un exercice pédagogique, mais les suggestions d'amélioration sont les bienvenues !
-
-### Comment contribuer ?
-
-1. Fork le projet
-2. Crée une branche feature (`git checkout -b feature/amazing-feature`)
-3. Commit tes changements (`git commit -m 'Add amazing feature'`)
-4. Push vers la branche (`git push origin feature/amazing-feature`)
-5. Ouvre une Pull Request
-
----
-
-## 📝 Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
-
----
-
 ## 👤 Auteur
 
-Projet réalisé dans le cadre de la formation **EAK - Easy Angular Kit**.
+Projet réalisé dans le cadre de la formation [**EAK - Easy Angular Kit**](https://easyangularkit.com?via=djoudj).
 
 ---
 
 ## 🙏 Remerciements
 
-- **Gaëtan Kerhervé** pour la formation EAK
+- ** GaetanRdn ** pour la formation EAK
 - La communauté Angular pour les outils et patterns
-- Tous les contributeurs open-source des dépendances utilisées
 
 ---
 
