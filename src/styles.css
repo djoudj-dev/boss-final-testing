@@ -1,3 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import "tailwindcss";
+
+/* Islands Dark Theme - Inspiré du nouveau thème JetBrains */
+@theme {
+  /* === BACKGROUNDS === */
+  --color-islands-bg-primary: #1E1F22;
+  --color-islands-bg-secondary: #2B2D30;
+  --color-islands-bg-tertiary: #313335;
+  --color-islands-bg-elevated: #3C3F41;
+  --color-islands-bg-hover: #2D2F32;
+
+  /* === SURFACES === */
+  --color-islands-surface-primary: #2B2D30;
+  --color-islands-surface-secondary: #313335;
+  --color-islands-surface-tertiary: #3C3F41;
+
+  /* === BORDERS === */
+  --color-islands-border-primary: #43454A;
+  --color-islands-border-secondary: #4E5157;
+  --color-islands-border-focus: #3574F0;
+
+  /* === TEXT === */
+  --color-islands-text-primary: #BCBEC4;
+  --color-islands-text-secondary: #868A91;
+  --color-islands-text-tertiary: #6C707A;
+  --color-islands-text-disabled: #4E5157;
+  --color-islands-text-inverse: #FFFFFF;
+
+  /* === ACCENTS === */
+  --color-islands-accent-blue: #3574F0;
+  --color-islands-accent-cyan: #22D3EE;
+  --color-islands-accent-purple: #A855F7;
+  --color-islands-accent-pink: #EC4899;
+  --color-islands-accent-green: #10B981;
+  --color-islands-accent-yellow: #F59E0B;
+  --color-islands-accent-red: #EF4444;
+
+  /* === SEMANTIC COLORS === */
+  --color-islands-success-bg: #0D4429;
+  --color-islands-success-border: #238746;
+  --color-islands-success-text: #4ADE80;
+
+  --color-islands-warning-bg: #4D3000;
+  --color-islands-warning-border: #805200;
+  --color-islands-warning-text: #FBBF24;
+
+  --color-islands-error-bg: #4D1515;
+  --color-islands-error-border: #802020;
+  --color-islands-error-text: #F87171;
+
+  --color-islands-info-bg: #0F2942;
+  --color-islands-info-border: #1E4976;
+  --color-islands-info-text: #60A5FA;
+
+  /* === SHADOWS === */
+  --shadow-islands-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-islands: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -1px rgb(0 0 0 / 0.3);
+  --shadow-islands-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -1px rgb(0 0 0 / 0.3);
+  --shadow-islands-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -2px rgb(0 0 0 / 0.3);
+  --shadow-islands-xl: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 10px 10px -5px rgb(0 0 0 / 0.3);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-islands-bg-primary);
+    color: var(--color-islands-text-primary);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--color-islands-bg-secondary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-islands-bg-elevated);
+    border-radius: 0.375rem;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-islands-border-secondary);
+  }
+}

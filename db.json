@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "publicationYear": 2008
+    },
+    {
+      "id": "2",
+      "title": "Refactoring",
+      "author": "Martin Fowler",
+      "publicationYear": 1999
+    },
+    {
+      "id": "3",
+      "title": "Design Patterns",
+      "author": "Gang of Four",
+      "publicationYear": 1994
+    }
+  ]
+}

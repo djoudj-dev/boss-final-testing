@@ -1,12 +1,11 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { BookPage } from './application/components/book-page';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  imports: [BookPage],
+  template: `
+    <app-book-page />
+  `,
 })
-export class App {
-  protected readonly title = signal('boss-final-testing');
-}
+export class App {}
